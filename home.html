@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <nav class="navbar navbar-light  justify-content-between home-nav">
+        <div class="ps-5">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVR4nO2ZO0wUURSG/0CgAQsesYAKGwnYSAOVJBAoiRrdRivoACFCAlpJCTTSQAUdaKOVNlouFVQaCI8goYNKG6BwCTlkyCGZmNx7z7m7ZA6Gk/zJZnLn3+/bnc3OA7gd51QCyAH4AGAHwAlnh7fleI3peQpgHwAF8gvAExicMgCzKdANAKMAWgFUcVp520Zq3Qzva2ZmGewvgMEAXDmAYV57JWPmcCIG61Ls152SeYyMpzL1m0i+Ce284n33AFQgw8mlfhPJIaOdZJ9N7niGDOcjQ4wU0fGaO5aR4ewyREsRHQ+4I/mfyWyOGaK6iI473JF0ZTZX/wdWev5/kVPB6UYaQLI2tuc0VqK+RAClEiEAdTEibQZFHsaI9HkKzwBMlEBE29MXIzLkKRz/5w1jRbQ9QzEi057C+hKJaHumY0RWPIV3ec0qgDy/bogQ0fasxIjkBYdEet4UcWhJe/IxIgeewgJD1PAnOJm6ttBE23MQc3pdiAC77hS0lwuNBqDJkeSbE0+HAWBypF0j8twAMDmiupIcNwBMjoxpROYMAJMj7zUinw0AkyOfNCLrBoDJkTWNyJEBYHLkUHPT7dwAMDlyLr2bf88ALAXSJBHpNABKgTySiLw0AEqBvJCIvDUASoEkp/rBWTAASoHMS0S+GgClQL5IRH4aAKVAfkhE/hgApUB+hySqDECSMN4nAM0GAEmY+z6RXgOAJEyPT2TAACAJ0+8TmTIASMK884ksGQAkYRZ9It8NAJIw33wi2wYASZgtyVPam5ATl0StAThtknvGl3MBr8PLQ0eslHoAAAAASUVORK5CYII="
+                alt="shopping-bag">
+        </div>
+        <div class="d-lg-none d-block text-center">
+            <h5 class="text-dark text-center">SwaraShop</h5>
+        </div>
+        <div class="input-group inputParent d-lg-flex d-none">
+            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="form-control" placeholder="Search here..">
+        </div>
+        <div class="d-lg-flex justify-content-around drop d-none">
+            <div class="dropdown  pe-2">
+                <button class="btn text-dark btn-light " data-bs-toggle="dropdown">Home</button>
+            </div>
+            <div class="dropdown  pe-2">
+                <button class="btn text-dark btn-light" data-bs-toggle="dropdown">Brand</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Zento</a></li>
+                    <li><a class="dropdown-item" href="#">YelloMart</a></li>
+                    <li><a class="dropdown-item" href="#">SnapBuy</a></li>
+                    <li><a class="dropdown-item" href="#">QuickKart</a></li>
+                    <li><a class="dropdown-item" href="#">UrbanCart</a></li>
+                </ul>
+            </div>
+            <div class=" pe-2">
+                <button class="btn text-dark btn-light" onclick="goToShop(event)">Product</button>
+            </div>
+            <div class=" pe-2">
+                <button class="btn buttona btn-light"><a href=" " class="text-dark">English</a></button>
+            </div>
+            <div class="pe-3">
+                <button type="button" class="btn btn-light position-relative" onclick="addToCart(e)" data-bs-target="#off2" data-bs-toggle="offcanvas"><i class="fa-solid fa-cart-arrow-down"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" id="addCart">
+                      0
+                    </span>
+                  </button>
+            </div>
+            <div class="pe-3">
+                <button type="button" class="btn btn-light position-relative "><i class="fa-regular fa-heart "></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark " id="likebtn">
+                        0
+                    </span>
+                    </button>
+            </div>
+        </div>
+        <!-- 3 bars -->
+        <div class="d-lg-none d-flex ">
+            <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#bar"><i class="fa-solid fa-bars"></i></button>
+            <div class="offcanvas offcanvas-end  w-50" id="bar" style="height: 300px">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" data-bs-toggle="offcanvas" data-bs-target="#bar"></button>
+                <div class="offcanvas-body offbody">
+                    <ol class="li">
+                        <li><button class="btn" data-bs-toggle="dropdown"><i class="fa-regular fa-house"></i>Home</button></li>
+                        <li><button class="btn" data-bs-toggle="dropdown"><i class="fa-regular fa-copyright"></i>Brand</button></li>
+                        <li><button class="btn" onclick="goToShop(event)"><i class="fa-solid fa-cart-arrow-down"></i>Product</button></li>
+                        <li><button class="btn buttona"><a href=" " class="text-dark"><i class="fa-brands fa-font-awesome"></i>English</a></button></li>
+                    </ol>
+                </div>
+            </div>
+    </nav>
+    <h2 id="welcome" class="d-flex justify-content-center mt-4 text-secondary"></h2>
+    <h1 id="h1" class="mt-4">SWARA <img src="/assets/images/nimg48_1.png"> SHOP</h1>
+    <!-- slide 1 -->
+    <p></p>
+    <div class="carousel slide mt-5" data-bs-ride="carousel" id="bannerCarousel">
+        <div class="carousel-inner container">
+            <!-- <div class="carousel-item" data-bs-interval="1000">
+                <div class="hero-slide">
+                    <img src="./assets/images/home-carousel.jpg " alt=" " class="w-100 hero-img" height="500px">
+                    <div class="hero-content">
+                        <h1>Big Yellow Sale</h1>
+                        <p> Up to <b>50% OFF</b> on top fashion,electronics & daily essentials</p>
+                        <button class="btn btn-danger">Shop now</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- slide 2 -->
+            <div class="carousel-item" data-bs-interval="1000">
+                <div class="hero-slide">
+                    <img src="./assets/images/home.jpeg" alt=" " class="w-100 hero-img" height="500px">
+                    <div class="hero-content">
+                        <h1>Latest Fashion Collection</h1>
+                        <p>Trending styles for men & women at <b>best prices.</b></p>
+                        <p>New arrivals every week.</p>
+                        <button class="btn btn-light ">Explore Fashion</button>
+                    </div>
+                </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="carousel-item" data-bs-interval="1000">
+                <div class="hero-slide">
+                    <img src="./assets/images/home1.jpeg " alt=" " class="w-100 hero-img" height="500px">
+                    <div class="hero-content">
+                        <h1>Smart Electronics Deals</h1>
+                        <p>Top brands Best quality Amazing discounts.</p>
+                        <p>Upgrade your lifestyle today.</p>
+                        <button class="btn btn-primary ">View Electronics</button>
+                    </div>
+                </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="carousel-item active" data-bs-interval="1000">
+                <div class="hero-slide">
+                    <img src="./assets/images/home3.jpeg " alt=" " class="w-100 hero-img" height="500px">
+                    <div class="hero-content ">
+                        <h1 class="text-secondary">Fast & Safe Delivery</h1>
+                        <p class="text-secondary">Quick delivery to your doorstep Easy returns. Secure payments</p>
+                        <button class="btn btn-secondary ">Start Shopping</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev btn" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" ></span>
+        </button>
+        <button class="carousel-control-next btn" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" ></span>
+       </button>
+    </div>
+    <h5 class="text-center text-secondary mt-4"> Most Popular Products</h5>
+    <div class="d-flex justify-content-around mt-4" data-aos="zoom-in" data-aos-duration="2000" id="round">
+        <div><img src="./assets/images/dress.jpg" alt="" class="rounded-circle" width="100px" height="100px">
+            <p class="text-center">Kids wear</p>
+        </div>
+        <div><img src=" ./assets/images/cargo.png " alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Cargo</p>
+        </div>
+        <div><img src="./assets/images/sweatshirt.png " alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Sweatshirt</p>
+        </div>
+        <div><img src="./assets/images/shirt.png " alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Sirt</p>
+        </div>
+        <div><img src="./assets/images/socks.jpeg " alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Scks</p>
+        </div>
+        <div><img src="./assets/images/cycle.jpeg " alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Cycle</p>
+        </div>
+        <div><img src="./assets/images/shorts.jpeg " alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Shorts</p>
+        </div>
+    </div>
+    <!-- Hover effect -->
+    <h4 class="text-center mt-4 h2 text-secondary">Online Shopping Women, Men and Kids</h4>
+    <div class="container1 mt-4 " data-aos="fade-up " data-aos-offset="300 " id="hovfor">
+        <div class="card1 "><img src=" ./assets/images/shop1.jpeg " alt=" " width="200px " height="300px "></div>
+        <div class="card1 "><img src="./assets/images/shop2.jpeg " alt=" " width="200px " height="300px "></div>
+        <div class="card1 "><img src="./assets/images/shop4.jpeg " alt=" " width="200px " height="300px "></div>
+        <div class="card1 "><img src="./assets/images/shop5.jpeg " alt=" " width="200px " height="300px "></div>
+    </div>
+    <h5 class="text-center text-secondary mt-4"> Most Popular Products</h5>
+    <div class="d-flex justify-content-around mt-4" data-aos="zoom-in" data-aos-duration="2000" id="round">
+        <div><img src="./assets/images/badminton.png" alt="" class="rounded-circle" width="100px" height="100px">
+            <p class="text-center">Badminton</p>
+        </div>
+        <div><img src="./assets/images/cricket-ball.png" alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Cricket Ball</p>
+        </div>
+        <div><img src="./assets/images/skating.png" alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Skating</p>
+        </div>
+        <div><img src="./assets/images/football.jpeg" alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Football</p>
+        </div>
+        <div><img src="./assets/images/shoes.jpg" alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Sports Shoes</p>
+        </div>
+        <div><img src="./assets/images/bicyle.webp" alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">Sports Cycle</p>
+        </div>
+        <div><img src="./assets/images/all-sports.jpeg" alt=" " class="rounded-circle " width="100px " height="100px ">
+            <p class="text-center">All Sports</p>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-top w-100 " style="height: 500px; " id="off2 ">
+        <div class="offcanvas-header ">
+            <center>
+                <h2>CartList</h2>
+            </center>
+            <button class="btn btn-close " data-bs-dismiss="offcanvas "></button></div>
+        <div class="offcanvas-body ">
+            <span id="total ">Total: </span>
+            <div class="container ">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-body ">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div class="row " id="product-fetch "></div>
+    <h2 class="text-center mt-4 h2 ">Furniture For Home</h2>
+    <div class="row d-flex justify-content-center mt-3 p-3 " id="home-card1">
+        <div class="card col-lg-3 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-right " data-aos-offset="300 ">
+            <img src="/assets/images/ mattresse.png " class="card-img-top pt-3 " alt="... " height="300px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Mattresses</h5>
+                <p class="card-text "><b>From</b> ₹2999</p>
+                <button type="button " class="btn a " onclick="home1(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(1) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 border-dark " style="width: 18rem;height:300px; " data-aos="fade-right " data-aos-offset="300 ">
+            <img src="/assets/images/sofa.jpeg " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Sofa</h5>
+                <p class="card-text "><b>From</b> ₹7890</p>
+                <button type="button " class="btn a " onclick="home2(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(2) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-right " data-aos-offset="300 ">
+            <img src="/assets/images/chair.png " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Office Study Chairs</h5>
+                <p class="card-text "><b>From</b> ₹1899</p>
+                <button type="button " class="btn a " onclick="home3(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(3) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-right " data-aos-offset="300 ">
+            <img src="/assets/images/bed.jpeg " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Beds</h5>
+                <p class="card-text "><b>From</b> ₹1598</p>
+                <button type="button " class="btn a " onclick="home4(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(4) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center mt-2 h2 ">Trendy & Traditional Collection</h2>
+    <div class="row d-flex justify-content-center mt-4 " id="home-card2">
+        <div class="card col-lg-3 mb-4 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-left " data-aos-offset="300 ">
+            <img src="/assets/images/hoode.jpg " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Men's Jackets</h5>
+                <p class="card-text "><b>From</b> ₹549</p>
+                <button type="button " class="btn a " onclick="home5(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(5) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 mb-4 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-left " data-aos-offset="300 ">
+            <img src="/assets/images/shoe.jpg " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Men's Shoes</h5>
+                <p class="card-text "><b>From</b> ₹999</p>
+                <button type="button " class="btn a " onclick="home6(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(6) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 mb-4 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-left " data-aos-offset="300 ">
+            <img src="/assets/images/lipstick.png " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Lipstick</h5>
+                <p class="card-text "><b>From</b> 299</p>
+                <button type="button " class="btn a " onclick="home7(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(7) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 mb-4 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-left " data-aos-offset="300 ">
+            <img src="/assets/images/watch.png " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Men's Watche</h5>
+                <p class="card-text "><b>From</b> ₹1599</p>
+                <button type="button " class="btn a " onclick="home8(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(8) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center mt-2 h2 ">Happy Kids Toy Store</h2>
+    <div class="row d-flex justify-content-center mt-4 " id="home-card3">
+        <div class="card col-lg-3 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-right " data-aos-offset="300 ">
+            <img src="/assets/images/jcb.jpg " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">JCB Toys</h5>
+                <p class="card-text "><b>From</b> ₹134</p>
+                <button type="button " class="btn a " onclick="home9(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(9) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-right " data-aos-offset="300 ">
+            <img src="/assets/images/rabbit.png " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Rabbit Toys</h5>
+                <p class="card-text "><b>From</b> ₹300</p>
+                <button type="button " class="btn a " onclick="home10(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(10) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-right " data-aos-offset="300 ">
+            <img src="/assets/images/cat.png " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Talking Cat</h5>
+                <p class="card-text "><b>From</b> ₹657</p>
+                <button type="button " class="btn a " onclick="home11(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(11) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 border-dark " style="width: 18rem;height: 300px; " data-aos="fade-right " data-aos-offset="300 ">
+            <img src="/assets/images/monkey-musical.webp " class="card-img-top pt-3 " alt="... " height="160px ">
+            <div class="card-body ">
+                <h5 class="card-title ">Monkey Musical Toys</h5>
+                <p class="card-text "><b>From</b> ₹219</p>
+                <button type="button " class="btn a " onclick="home12(event) ">Read more</button>
+                <button class="btn me-2 btn1 " onclick="addToCart(12) "><i class="fa-solid fa-cart-arrow-down "></i></button>
+                <button class="btn btn2 " onclick="likeProduct() ">💛</button>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-4 " style="height: 300px; ">
+        <div class="row ">
+            <div class="col-lg-3 col-6 ">
+                <ol class="li mt-3 ">
+                    <li class="text-dark "><b>SHOP</b></li>
+                    <li class="text-dark ">New Arrivals</li>
+                    <li class="text-dark ">Collection</li>
+                    <li class="text-dark ">Accessories</li>
+                    <li class="text-dark ">Shoes</li>
+                </ol>
+            </div>
+            <div class="col-lg-3 col-6 ">
+                <ol class="li mt-3 ">
+                    <li class="text-dark "><b>POPULAR</b></li>
+                    <li class="text-dark ">Seasonal Favorites</li>
+                    <li class="text-dark ">Must-Have Bags</li>
+                    <li class="text-dark ">Cozy Knitwear</li>
+                    <li class="text-dark ">Trendy Accessories</li>
+                </ol>
+            </div>
+            <div class="col-lg-3 col-6 ">
+                <ol class="li mt-3 ">
+                    <li class="text-dark "><b>SUPPORT</b></li>
+                    <li class="text-dark ">Contact Us</li>
+                    <li class="text-dark ">Account</li>
+                    <li class="text-dark ">Store Loation</li>
+                    <li class="text-dark ">Returns</li>
+                </ol>
+            </div>
+            <div class="col-lg-3 col-6 ">
+                <ol class="li mt-3 ">
+                    <li class="text-dark "><b>COLLECTIONS</b></li>
+                    <li class="text-dark ">Home Decore</li>
+                    <li class="text-dark ">Women Heels</li>
+                    <li class="text-dark ">watches</li>
+                    <li class="text-dark ">Toys</li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+        <div class="text-dark text-center ">
+            <h6>SWARA SHOP</h6>
+            <p>Contact Us:8190091410</p>
+        </div>
+    </footer>
+</body>
+<script src="./assets/script/home.js "></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

@@ -1,0 +1,45 @@
+:root {
+    --theme-color: #788978;
+}
+
+#nav-product {
+    background-color: var(--theme-color);
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.inputParent {
+    width: 300px;
+    margin-left: 90px;
+}
+
+#search-bar {
+    background-color: #547792;
+    color: white;
+}
+
+.buttonoff {
+    background-color: #EAE0CF;
+}
+
+#h1 {
+    text-align: center;
+}
+
+.buttona a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--theme-color);
+}
+
+.li li {
+    list-style-type: none;
+}
+
+#bar {
+    background-color: var(--theme-color);
+}

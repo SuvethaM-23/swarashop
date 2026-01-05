@@ -1,0 +1,193 @@
+body {
+    background-color: #F7F9F2;
+}
+
+:root {
+    --theme-color: #788978;
+}
+
+.hero-slide {
+    position: relative;
+}
+
+.hero-img {
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 400px;
+}
+
+.home-nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+.home-nav {
+    height: 70px;
+    background-color: var(--theme-color);
+}
+
+.buttona a {
+    text-decoration: none;
+}
+
+#home-card1 {
+    display: grid;
+    gap: 30px;
+}
+
+#home-card2 {
+    display: grid;
+    gap: 30px;
+}
+
+#home-card3 {
+    display: grid;
+    gap: 30px;
+}
+
+.inputParent {
+    width: 300px;
+    margin-left: 90px;
+}
+
+#h1 {
+    text-align: center;
+    color: #788978;
+}
+
+.a {
+    background-color: #4F5F2C;
+    color: #F7F9F2;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.li li {
+    list-style-type: none;
+}
+
+footer {
+    background-color: var(--theme-color);
+}
+
+.h2 {
+    color: var(--theme-color);
+}
+
+#bar {
+    background-color: var(--theme-color);
+}
+
+#home-card1 img {
+    transition: 2s linear;
+}
+
+#home-card1 img:hover {
+    transform: scale(1.3);
+}
+
+#home-card2 img {
+    transition: 2s linear;
+}
+
+#home-card2 img:hover {
+    transform: scale(1.3);
+}
+
+#home-card3 img {
+    transition: 2s linear;
+}
+
+#home-card3 img:hover {
+    transform: scale(1.3);
+}
+
+.btn1 {
+    background-color: #FED16A;
+}
+
+.btn2 {
+    background-color: #C96868;
+}
+
+
+/* #div {
+    display: flex;
+    width: 400px;
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#div div {
+    flex: 1;
+    cursor: pointer;
+    transition: flex 3s ease;
+}
+
+#div div:hover {
+    flex: 3;
+} */
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.card1 {
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.container1:hover>:not(:hover) {
+    opacity: 0.3;
+}
+
+.card1:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width:426px) {
+    #hovfor img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+#round img {
+    transition: 3s linear;
+}
+
+#round img:hover {
+    scale: (1.5);
+}
+
+@media(max-width:426px) {
+    #round img {
+        width: 50px;
+        height: 50px;
+    }
+    #round p {
+        font-size: sma;
+    }
+}
