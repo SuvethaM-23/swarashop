@@ -1,5 +1,5 @@
 :root {
-    --theme-color: #788978;
+    --theme-color: #1C4D8D;
 }
 
 #nav-product {
@@ -42,4 +42,8 @@ footer {
 
 #bar {
     background-color: var(--theme-color);
+}
+
+#h1 {
+    color: var(--theme-color);
 }

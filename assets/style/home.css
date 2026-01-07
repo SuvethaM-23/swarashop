@@ -3,7 +3,7 @@ body {
 }
 
 :root {
-    --theme-color: #788978;
+    --theme-color: #1C4D8D;
 }
 
 .hero-slide {
@@ -69,11 +69,11 @@ body {
 
 #h1 {
     text-align: center;
-    color: #788978;
+    color: var(--theme-color);
 }
 
 .a {
-    background-color: #4F5F2C;
+    background-color: var(--theme-color);
     color: #F7F9F2;
     border-color: black;
     border-radius: 5px;

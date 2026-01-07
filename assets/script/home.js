@@ -62,7 +62,7 @@ function home11(e) {
 
 function home12(e) {
     e.preventDefault();
-    window.location.href = "/monkey.html"
+    window.location.href = "./monkey.html"
 }
 const products = [{
     id: 1,

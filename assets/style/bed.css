@@ -1,5 +1,5 @@
 :root {
-    --theme-color: #788978;
+    --theme-color: #1C4D8D;
 }
 
 #nav-product {
@@ -73,3 +73,10 @@ input {
         overflow: hidden;
     }
 }
+
+
+/* @media(max-width: 426px) {
+    footer {
+        height: 400px;
+    }
+} */

@@ -16,89 +16,90 @@
 </head>
 
 <body>
-    <div class="row mt-4" id="row">
-        <nav class="navbar navbar-light  justify-content-between" id="nav-product">
-            <div class="ps-5">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVR4nO2ZO0wUURSG/0CgAQsesYAKGwnYSAOVJBAoiRrdRivoACFCAlpJCTTSQAUdaKOVNlouFVQaCI8goYNKG6BwCTlkyCGZmNx7z7m7ZA6Gk/zJZnLn3+/bnc3OA7gd51QCyAH4AGAHwAlnh7fleI3peQpgHwAF8gvAExicMgCzKdANAKMAWgFUcVp520Zq3Qzva2ZmGewvgMEAXDmAYV57JWPmcCIG61Ls152SeYyMpzL1m0i+Ce284n33AFQgw8mlfhPJIaOdZJ9N7niGDOcjQ4wU0fGaO5aR4ewyREsRHQ+4I/mfyWyOGaK6iI473JF0ZTZX/wdWev5/kVPB6UYaQLI2tuc0VqK+RAClEiEAdTEibQZFHsaI9HkKzwBMlEBE29MXIzLkKRz/5w1jRbQ9QzEi057C+hKJaHumY0RWPIV3ec0qgDy/bogQ0fasxIjkBYdEet4UcWhJe/IxIgeewgJD1PAnOJm6ttBE23MQc3pdiAC77hS0lwuNBqDJkeSbE0+HAWBypF0j8twAMDmiupIcNwBMjoxpROYMAJMj7zUinw0AkyOfNCLrBoDJkTWNyJEBYHLkUHPT7dwAMDlyLr2bf88ALAXSJBHpNABKgTySiLw0AEqBvJCIvDUASoEkp/rBWTAASoHMS0S+GgClQL5IRH4aAKVAfkhE/hgApUB+hySqDECSMN4nAM0GAEmY+z6RXgOAJEyPT2TAACAJ0+8TmTIASMK884ksGQAkYRZ9It8NAJIw33wi2wYASZgtyVPam5ATl0StAThtknvGl3MBr8PLQ0eslHoAAAAASUVORK5CYII="
-                    alt="shopping-bag">
-            </div>
-            <div class="d-lg-none d-block text-center">
+    <nav class="navbar navbar-light  justify-content-between" id="nav-product">
+        <div class="ps-5">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC2ElEQVR4nO2ZzY9LURjGb8cM42NjR2KMhQgLC7GREDaCikQsJdMxQ0ekwWYMk1hZWYkQC4m/wNZ0LIwV8REaH//AlKlYsCQTqXZ+cuqpHLTVc29v75H0Sbq59zzveZ+e+77nPe8Jgh566CEygJXABHAf+ACUiQ9lzTELZIHBTok4AiyQHN4D6agizgJVGXwBZIAhoL8j/1LjOfs1xyjwUnNXgFyUlajKyCSQ6rjX//YhBUxZfqTDxET9c5qMzdP2/bkoX945xQxw2vqcur4STVamIJ+yQbtQdjLIBJ4AOCGf8i6kkkhDgScANsqnBRdSfZ+ILTu5AhiQT2UXUg0dmHwDsA/YD2yJGm+4+hVVCHAUeNtgcysCp8IKoptCgHOW48+Am8B1YA5Y0vNrXgsB1gHftIEdb/B+L/BV5nf7LGRE1IctxlzVmBs+C5kQ9W6LMcuBtcBqn4XsEXXRZCtXvk9C+oCnopvAzgNjwHpXWz5krTXAHVWrNt4Al4FNYex2XcgfGey8TnpfLEGLYStqkhDSIMAPAw8sQeP/nRAbwG2Znws8DvbtwE5gRYsxO2R+3mchT0QdaTHmmMY891lITtTPwK4G7zercDS44LOQZcpSdTwGbpkiEZgBvuv5o1afnxfBrgPQJeAjf+MTcMU0N0LariE+QvNdfitwQL9t5llEmzU4Ezw96uJCwsPmw3AUIaOBJwDGowh5HfW77gT4GW+FKEIMpmL1sj1/pm2HXIhYZ4qqeq+phFZiWj4sRRGSta4VCmpbmo7fQMzZaVgHsleau6o2krOQX51G4JAp8EgO88DBsJ3G33q/wCpdvORVK8V99VZUSZOpVwFW+nXq/c56mH7H5NOMC8nEBrr68uF+pM+Kl5MuxEFdQvqWfovOVbPO2BWP0m/FFJ9hDeWstk6S6bcCnIlqOK1LyKRQDL0STWImq5RY6kL6LQH3tAk6nyR76CHoHH4A4DN9h/v9wRkAAAAASUVORK5CYII="
+                alt="s-key">
+            <span class="text-light">SwaraShop</span>
+        </div>
+        <!-- <div class="d-lg-none d-block text-center">
                 <h5 class="text-dark text-center">SwaraShop</h5>
+            </div> -->
+        <div class="input-group inputParent d-lg-flex d-none" data-bs-toggle="offcanvas" data-bs-target="#search-bar">
+            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="form-control inputParent" placeholder="Search here..">
+        </div>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-top w-lg-100 w-sm-50" id="search-bar" style="height: 700px">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Search here..</h2>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" data-bs-toggle="offcanvas" data-bs-target="#search-bar"></button>
             </div>
-            <div class="input-group inputParent d-lg-flex d-none" data-bs-toggle="offcanvas" data-bs-target="#search-bar">
-                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                <input type="text" class="form-control inputParent" placeholder="Search here..">
+            <div class="offcanvas-body offbody">
+                <form action="" class="input-group" onsubmit="searchFun(event)">
+                    <input type="search" class="form-control" id="search-input" placeholder="search" />
+                    <button class="btn btn-light buttonoff">Submit</button>
+                </form>
+                <br/>
+                <div class="row" id="search-fetch"></div>
             </div>
-            <!-- offcanvas -->
-            <div class="offcanvas offcanvas-top w-lg-100 w-sm-50" id="search-bar" style="height: 700px">
-                <div class="offcanvas-header">
-                    <h2 class="offcanvas-title">Search here..</h2>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" data-bs-toggle="offcanvas" data-bs-target="#search-bar"></button>
-                </div>
-                <div class="offcanvas-body offbody">
-                    <form action="" class="input-group" onsubmit="searchFun(event)">
-                        <input type="search" class="form-control" id="search-input" placeholder="search" />
-                        <button class="btn btn-light buttonoff">Submit</button>
-                    </form>
-                    <br/>
-                    <div class="row" id="search-fetch"></div>
-                </div>
+        </div>
+        <!-- offcanvas end -->
+        <div class="d-lg-flex justify-content-around drop d-none">
+            <div class="dropdown pe-3">
+                <button class="btn text-dark btn-light" data-bs-toggle="dropdown" onclick="goToHome(event)">Home</button>
             </div>
-            <!-- offcanvas end -->
-            <div class="d-lg-flex justify-content-around drop d-none">
-                <div class="dropdown pe-3">
-                    <button class="btn text-dark btn-light" data-bs-toggle="dropdown" onclick="goToHome(event)">Home</button>
-                </div>
-                <div class="dropdown pe-3">
-                    <button class="btn btn-light text-dark" data-bs-toggle="dropdown">Brand</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Zento</a></li>
-                        <li><a class="dropdown-item" href="#">YelloMart</a></li>
-                        <li><a class="dropdown-item" href="#">SnapBuy</a></li>
-                        <li><a class="dropdown-item" href="#">QuickKart</a></li>
-                        <li><a class="dropdown-item" href="#">UrbanCart</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown pe-3">
-                    <button data-bs-toggle="dropdown" class="btn text-dark btn-light">Product</button>
-                </div>
-                <div class="pe-3">
-                    <button class="btn buttona btn-light"><a href="" class="text-dark">English</a></button>
-                </div>
-                <!-- <div class="pe-3">
+            <div class="dropdown pe-3">
+                <button class="btn btn-light text-dark" data-bs-toggle="dropdown">Brand</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Zento</a></li>
+                    <li><a class="dropdown-item" href="#">YelloMart</a></li>
+                    <li><a class="dropdown-item" href="#">SnapBuy</a></li>
+                    <li><a class="dropdown-item" href="#">QuickKart</a></li>
+                    <li><a class="dropdown-item" href="#">UrbanCart</a></li>
+                </ul>
+            </div>
+            <div class="dropdown pe-3">
+                <button data-bs-toggle="dropdown" class="btn text-dark btn-light">Product</button>
+            </div>
+            <div class="pe-3">
+                <button class="btn buttona btn-light"><a href="" class="text-dark">English</a></button>
+            </div>
+            <!-- <div class="pe-3">
             <button class="btn btn-light" onclick="addToCart(e)" data-bs-target="#off2" data-bs-toggle="offcanvas"><i class="fa-solid fa-cart-arrow-down"></i></button>
         </div> -->
-                <div class="pe-3">
-                    <button type="button" class="btn btn-light position-relative" onclick="addToCart(e)" data-bs-target="#off2" data-bs-toggle="offcanvas"><i class="fa-solid fa-cart-arrow-down"></i>
+            <div class="pe-3">
+                <button type="button" class="btn btn-light position-relative" onclick="addToCart(e)" data-bs-target="#off2" data-bs-toggle="offcanvas"><i class="fa-solid fa-cart-arrow-down"></i>
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" id="addCart">
                   0
                 </span>
               </button>
-                </div>
-                <div class="pe-3">
-                    <button type="button" class="btn btn-light position-relative "><i class="fa-regular fa-heart "></i>
+            </div>
+            <div class="pe-3">
+                <button type="button" class="btn btn-light position-relative "><i class="fa-regular fa-heart "></i>
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark " id="likebtn">
                     0
                 </span>
                 </button>
+            </div>
+        </div>
+        <!-- 3 bars -->
+        <div class="d-lg-none d-flex">
+            <button class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#bar"><i class="fa-solid fa-bars"></i></button>
+            <div class="offcanvas offcanvas-end  w-50" id="bar" style="height: 300px">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" data-bs-toggle="offcanvas" data-bs-target="#bar"></button>
+                <div class="offcanvas-body offbody">
+                    <ol class="li">
+                        <li><button class="btn" data-bs-toggle="dropdown"><i class="fa-regular fa-house"></i>Home</button></li>
+                        <li><button class="btn" data-bs-toggle="dropdown"><i class="fa-regular fa-copyright"></i>Brand</button></li>
+                        <li><button class="btn" onclick="goToShop(event)"><i class="fa-solid fa-cart-arrow-down"></i>Product</button></li>
+                        <li><button class="btn buttona"><a href=" " class="text-dark"><i class="fa-brands fa-font-awesome"></i>English</a></button></li>
+                    </ol>
                 </div>
             </div>
-            <!-- 3 bars -->
-            <div class="d-lg-none d-flex">
-                <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#bar"><i class="fa-solid fa-bars"></i></button>
-                <div class="offcanvas offcanvas-end  w-50" id="bar" style="height: 300px">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" data-bs-toggle="offcanvas" data-bs-target="#bar"></button>
-                    <div class="offcanvas-body offbody">
-                        <ol class="li">
-                            <li><button class="btn" data-bs-toggle="dropdown"><i class="fa-regular fa-house"></i>Home</button></li>
-                            <li><button class="btn" data-bs-toggle="dropdown"><i class="fa-regular fa-copyright"></i>Brand</button></li>
-                            <li><button class="btn" onclick="goToShop(event)"><i class="fa-solid fa-cart-arrow-down"></i>Product</button></li>
-                            <li><button class="btn buttona"><a href=" " class="text-dark"><i class="fa-brands fa-font-awesome"></i>English</a></button></li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
+    <div class="row mt-4" id="row">
         <div class="col-lg-6"><img src="./assets/images/bed.jpeg" alt="" width="600px" height="400px" id="img">
             <div class="d-flex justify-content-around" data-aos="zoom-in" data-aos-duration="2000">
                 <div><img src="./assets/images/matpart3.jpg" alt="" class="rounded-circle"></div>
@@ -106,7 +107,7 @@
                 <div><img src="./assets/images/matpart4.jpg" alt="" class="rounded-circle"></div>
                 <div><img src="./assets/images/matpart1.jpg" alt="" class="rounded-circle"></div>
             </div><br><br>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center" id="order">
                 <button class="btn btn-warning rounded-2 text-center" onclick="ordernow()">Order now</button>
             </div>
 
@@ -215,47 +216,47 @@
             </div>
         </div>
     </div>
-    <footer class="mt-4" style="height: 300px; ">
-        <div class="row">
+    <footer class="mt-4 " style="height: 300px; ">
+        <div class="row ">
             <div class="col-lg-3 col-6 ">
                 <ol class="li mt-3 ">
-                    <li class="text-dark "><b>SHOP</b></li>
-                    <li class="text-dark">New Arrivals</li>
-                    <li class="text-dark">Collection</li>
-                    <li class="text-dark">Accessories</li>
-                    <li class="text-dark">Shoes</li>
+                    <li class="text-light "><b>SHOP</b></li>
+                    <li class="text-light ">New Arrivals</li>
+                    <li class="text-light ">Collection</li>
+                    <li class="text-light ">Accessories</li>
+                    <li class="text-light ">Shoes</li>
                 </ol>
             </div>
             <div class="col-lg-3 col-6 ">
                 <ol class="li mt-3 ">
-                    <li class="text-dark "><b>POPULAR</b></li>
-                    <li class="text-dark ">Seasonal Favorites</li>
-                    <li class="text-dark">Must-Have Bags</li>
-                    <li class="text-dark">Cozy Knitwear</li>
-                    <li class="text-dark">Trendy Accessories</li>
+                    <li class="text-light "><b>POPULAR</b></li>
+                    <li class="text-light ">Seasonal Favorites</li>
+                    <li class="text-light ">Must-Have Bags</li>
+                    <li class="text-light ">Cozy Knitwear</li>
+                    <li class="text-light ">Trendy Accessories</li>
                 </ol>
             </div>
             <div class="col-lg-3 col-6 ">
                 <ol class="li mt-3 ">
-                    <li class="text-dark"><b>SUPPORT</b></li>
-                    <li class="text-dark">Contact Us</li>
-                    <li class="text-dark">Account</li>
-                    <li class="text-dark">Store Loation</li>
-                    <li class="text-dark">Returns</li>
+                    <li class="text-light "><b>SUPPORT</b></li>
+                    <li class="text-light ">Contact Us</li>
+                    <li class="text-light ">Account</li>
+                    <li class="text-light ">Store Loation</li>
+                    <li class="text-light ">Returns</li>
                 </ol>
             </div>
             <div class="col-lg-3 col-6 ">
                 <ol class="li mt-3 ">
-                    <li class="text-dark "><b>COLLECTIONS</b></li>
-                    <li class="text-dark">Home Decore</li>
-                    <li class="text-dark">Women Heels</li>
-                    <li class="text-dark">watches</li>
-                    <li class="text-dark">Toys</li>
+                    <li class="text-light "><b>COLLECTIONS</b></li>
+                    <li class="text-light ">Home Decore</li>
+                    <li class="text-light ">Women Heels</li>
+                    <li class="text-light ">watches</li>
+                    <li class="text-light ">Toys</li>
                 </ol>
             </div>
         </div>
         <hr>
-        <div class="text-dark text-center ">
+        <div class="text-center div text-light">
             <h6>SWARA SHOP</h6>
             <p>Contact Us:8190091410</p>
         </div>
